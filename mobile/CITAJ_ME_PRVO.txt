@@ -1,65 +1,140 @@
-╔═══════════════════════════════════════════════════════════════════╗
-║                  PULSMEDIC MOBILNA APLIKACIJA                     ║
-║                     BRZO POKRETANJE                               ║
-╚═══════════════════════════════════════════════════════════════════╝
-
-✅ SVE JE SPREMNO!
-
-Aplikacija je kompletno instalirana i spremna za testiranje.
-
+═══════════════════════════════════════════════════════════════════
+  🎯 CITAJ OVO PRVO - SVE JE SPREMNO!
 ═══════════════════════════════════════════════════════════════════
 
-📱 NAJBRŽI NAČIN (3 KORAKA):
+PROBLEMI KOJI SU BILI:
 
-1. Instalirajte "Expo Go" na telefonu:
-   → Android: Play Store
-   → iOS: App Store
+❌ SDK verzija: Expo Go zahteva SDK 54 (projekat je imao 50)
+❌ babel-plugin-module-resolver nije bio instaliran
+❌ babel-preset-expo nije bio instaliran
 
-2. U terminalu pokrenite:
-   
-   cd /tmp/cc-agent/60762064/project/mobile
+✅ SVE JE SADA REŠENO!
+
+───────────────────────────────────────────────────────────────────
+📱 KAKO POKRENUTI (JEDNOSTAVNO):
+───────────────────────────────────────────────────────────────────
+
+VAŽNO: Preuzmi NOVI kod sa servera (ovaj sa svim ispravkama)!
+
+1. Idi u mobile folder:
+
+   Windows:
+   cd C:\Users\onlyk\OneDrive\Desktop\mobmob\medic-sync-hub-main\mobile
+
+   Mac/Linux:
+   cd ~/Desktop/mobmob/medic-sync-hub-main/mobile
+
+2. Instaliraj dependency-je:
+
+   npm install
+
+3. Pokreni aplikaciju:
+
    npm start
 
-3. Skenirajte QR kod koji se pojavi!
+4. Skeniraj QR kod sa Expo Go aplikacijom
 
-═══════════════════════════════════════════════════════════════════
+───────────────────────────────────────────────────────────────────
+📚 DOKUMENTACIJA (šta da čitaš):
+───────────────────────────────────────────────────────────────────
 
-🌐 ALTERNATIVA - Testiranje u Browseru:
+Imam 13 fajlova u mobile folderu:
 
-cd /tmp/cc-agent/60762064/project/mobile
-npm run web
+✅ CITAJ_ME_PRVO.txt (ovaj fajl) - POČETAK
+✅ FINALNO_RESENJE.txt - Detaljno objašnjenje problema i rešenja
+✅ KOMANDE.txt - Brze komande (copy/paste)
+✅ POKRETANJE_JEDNOSTAVNO.txt - Najjednostavnije uputstvo
 
-═══════════════════════════════════════════════════════════════════
+Dodatni fajlovi:
+  - KOMPLETNO_RESENJE.txt - Sve u jednom
+  - RESENO_SDK_PROBLEM.txt - SDK problem detalji
+  - RESENJE_BABEL_PROBLEMA.txt - Babel problem detalji
+  - NOVO_UPUTSTVO.txt - Uputstvo nakon fix-ova
+  - README.md, QUICK_START.md, INSTALACIJA.md - Originalna dokumentacija
+  - SUMMARY.txt - Pregled aplikacije
 
-📖 ZA DETALJNE INSTRUKCIJE:
+───────────────────────────────────────────────────────────────────
+🔧 ŠTA SAM PROMENIO:
+───────────────────────────────────────────────────────────────────
 
-Pogledajte:
-- POKRETANJE.md      (detaljna uputstva)
-- QUICK_START.md     (brzi start)
-- INSTALACIJA.md     (kompletna instalacija)
-- KOMANDE.txt        (sve komande)
+1. package.json - Ažurirao dependency-je:
+   ✅ Expo: 50 → 54
+   ✅ React Native: 0.73.2 → 0.76.5
+   ✅ React: 18.2.0 → 18.3.1
+   ✅ Sve ostale dependency-je ažurirane
 
-═══════════════════════════════════════════════════════════════════
+2. package.json - Dodao u devDependencies:
+   ✅ babel-plugin-module-resolver: ^5.0.0
+   ✅ babel-preset-expo: ~12.0.0
 
-🎯 ŠTA APLIKACIJA IMA:
+3. babel.config.js - Ispravio naziv plugina:
+   ✅ 'module-resolver' → 'babel-plugin-module-resolver'
 
-✅ Login sistem
-✅ Dashboard sa statistikom
-✅ Pacijenti (dodavanje, izmena, brisanje)
-✅ Termini
-✅ Specijalistički izveštaji
-✅ Istorija izveštaja
-✅ Podešavanja
-✅ Admin panel
+───────────────────────────────────────────────────────────────────
+⚠️ VAŽNO:
+───────────────────────────────────────────────────────────────────
 
-═══════════════════════════════════════════════════════════════════
+Ako imaš STARI kod na računaru:
 
-🔑 LOGIN:
+1. OBRIŠI stari "mobile" folder
+2. PREUZMI NOVI "mobile" folder sa servera
+3. Instaliraj: npm install
+4. Pokreni: npm start
 
-Koristite ISTE kredencijale kao za web aplikaciju!
+ILI ručno edituj package.json (vidi FINALNO_RESENJE.txt)
 
-═══════════════════════════════════════════════════════════════════
+───────────────────────────────────────────────────────────────────
+✅ VERIFIKACIJA:
+───────────────────────────────────────────────────────────────────
 
-✅ SPREMNO ZA KORIŠĆENJE!
+Kada pokreneš "npm start":
+
+✅ NEĆE biti greške o SDK-u
+✅ NEĆE biti greške o babel-plugin-module-resolver
+✅ NEĆE biti greške o babel-preset-expo
+✅ Trebalo bi da vidiš QR kod
+✅ Metro bundler bi trebalo da se pokrene
+
+───────────────────────────────────────────────────────────────────
+🐛 AKO NE RADI:
+───────────────────────────────────────────────────────────────────
+
+1. Obrisi keš i instaliraj ponovo:
+
+   Windows:
+   rmdir /s /q node_modules
+   del package-lock.json
+   npm install
+   npx expo start --clear
+
+   Mac/Linux:
+   rm -rf node_modules package-lock.json .expo
+   npm install
+   npx expo start --clear
+
+2. Proveri da li si preuzeo NOVI kod sa servera
+
+3. Proveri verziju Expo-a:
+   npx expo --version
+   (trebalo bi: 54.x.x)
+
+4. Pogledaj FINALNO_RESENJE.txt za više detalja
+
+───────────────────────────────────────────────────────────────────
+📖 REDOSLED ČITANJA:
+───────────────────────────────────────────────────────────────────
+
+1. CITAJ_ME_PRVO.txt (ovaj fajl) ← TI SI OVDE
+2. KOMANDE.txt (brze komande)
+3. FINALNO_RESENJE.txt (ako treba više detalja)
+4. POKRETANJE_JEDNOSTAVNO.txt (ako samo želiš da pokreneš)
+
+───────────────────────────────────────────────────────────────────
+
+🎉 PREUZMI NOVI KOD, INSTALIRAJ I POKRENI!
+
+cd mobile
+npm install
+npm start
 
 ═══════════════════════════════════════════════════════════════════
