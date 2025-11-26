@@ -1,0 +1,66 @@
+╔═══════════════════════════════════════════════════════════════╗
+║          PULSMEDIC MOBILNA - SVE POTREBNE KOMANDE            ║
+╚═══════════════════════════════════════════════════════════════╝
+
+📍 LOKACIJA:
+/tmp/cc-agent/60762064/project/mobile/
+
+═══════════════════════════════════════════════════════════════════
+
+🚀 BRZO POKRETANJE (testiranje na telefonu):
+
+cd /tmp/cc-agent/60762064/project/mobile
+npm install
+npm start
+
+[Skenirajte QR kod sa Expo Go aplikacijom]
+
+═══════════════════════════════════════════════════════════════════
+
+📦 KREIRANJE APK FAJLA:
+
+cd /tmp/cc-agent/60762064/project/mobile
+npm install
+npm install -g eas-cli
+eas login
+eas build --platform android --profile preview
+
+[Čekajte 10-20 minuta, dobićete link za APK]
+
+═══════════════════════════════════════════════════════════════════
+
+🔧 DRUGE KORISNE KOMANDE:
+
+# Instalacija sa legacy support
+npm install --legacy-peer-deps
+
+# Pokretanje sa tunelom (ako QR ne radi)
+npm start --tunnel
+
+# Čišćenje cache-a
+npx expo start --clear
+
+# Provera verzija
+npm list expo react-native
+
+# Build za production
+eas build --platform android --profile production
+
+# Provera build statusa
+eas build:list
+
+═══════════════════════════════════════════════════════════════════
+
+📱 EXPO GO APLIKACIJA:
+
+Android: https://play.google.com/store/apps/details?id=host.exp.exponent
+iOS: https://apps.apple.com/app/expo-go/id982107779
+
+═══════════════════════════════════════════════════════════════════
+
+✅ TO JE SVE!
+
+Pogledajte README.md, INSTALACIJA.md ili QUICK_START.md za 
+detaljnije instrukcije.
+
+═══════════════════════════════════════════════════════════════════
