@@ -1,0 +1,65 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║                  PULSMEDIC MOBILNA APLIKACIJA                     ║
+║                     BRZO POKRETANJE                               ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+✅ SVE JE SPREMNO!
+
+Aplikacija je kompletno instalirana i spremna za testiranje.
+
+═══════════════════════════════════════════════════════════════════
+
+📱 NAJBRŽI NAČIN (3 KORAKA):
+
+1. Instalirajte "Expo Go" na telefonu:
+   → Android: Play Store
+   → iOS: App Store
+
+2. U terminalu pokrenite:
+   
+   cd /tmp/cc-agent/60762064/project/mobile
+   npm start
+
+3. Skenirajte QR kod koji se pojavi!
+
+═══════════════════════════════════════════════════════════════════
+
+🌐 ALTERNATIVA - Testiranje u Browseru:
+
+cd /tmp/cc-agent/60762064/project/mobile
+npm run web
+
+═══════════════════════════════════════════════════════════════════
+
+📖 ZA DETALJNE INSTRUKCIJE:
+
+Pogledajte:
+- POKRETANJE.md      (detaljna uputstva)
+- QUICK_START.md     (brzi start)
+- INSTALACIJA.md     (kompletna instalacija)
+- KOMANDE.txt        (sve komande)
+
+═══════════════════════════════════════════════════════════════════
+
+🎯 ŠTA APLIKACIJA IMA:
+
+✅ Login sistem
+✅ Dashboard sa statistikom
+✅ Pacijenti (dodavanje, izmena, brisanje)
+✅ Termini
+✅ Specijalistički izveštaji
+✅ Istorija izveštaja
+✅ Podešavanja
+✅ Admin panel
+
+═══════════════════════════════════════════════════════════════════
+
+🔑 LOGIN:
+
+Koristite ISTE kredencijale kao za web aplikaciju!
+
+═══════════════════════════════════════════════════════════════════
+
+✅ SPREMNO ZA KORIŠĆENJE!
+
+═══════════════════════════════════════════════════════════════════
